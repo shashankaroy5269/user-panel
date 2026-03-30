@@ -1,0 +1,73 @@
+.wrapper {
+  padding: 24px;
+}
+
+.title {
+  font-size: 28px;
+  font-weight: 600;
+  margin-bottom: 20px;
+}
+
+.grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(220px, 1fr));
+  gap: 20px;
+}
+
+.card {
+  background: #ffffff;
+  border-radius: 12px;
+  padding: 16px;
+  box-shadow: 0 4px 15px rgba(0,0,0,0.08);
+  transition: 0.3s;
+}
+
+.card:hover {
+  transform: translateY(-4px);
+}
+
+.name {
+  font-size: 18px;
+  font-weight: 600;
+}
+
+.dept {
+  font-size: 14px;
+  color: #6b7280;
+  margin: 6px 0;
+}
+
+.btn {
+  margin-top: 10px;
+  width: 100%;
+  background: linear-gradient(135deg, #3b82f6, #06b6d4);
+  color: white;
+  padding: 8px;
+  border-radius: 8px;
+  border: none;
+  cursor: pointer;
+}
+
+.btn:hover {
+  opacity: 0.9;
+}
+
+.pagination {
+  margin-top: 25px;
+  display: flex;
+  justify-content: center;
+  gap: 10px;
+}
+
+.pageBtn {
+  padding: 6px 12px;
+  border-radius: 6px;
+  border: 1px solid #ddd;
+  cursor: pointer;
+  background: white;
+}
+
+.pageBtn:disabled {
+  opacity: 0.5;
+  cursor: not-allowed;
+}
