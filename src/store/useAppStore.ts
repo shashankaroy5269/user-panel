@@ -1,7 +1,7 @@
 "use client";
 
 import { create } from "zustand";
-import { AxiosInstance } from "@/src/core/http/axios";
+import AxiosInstance from "../api/axios";
 import { toast } from "sonner";
 
 type StoreState = {
@@ -14,34 +14,57 @@ type StoreState = {
 const useAppStore = create<StoreState>((set) => ({
   authToken: null,
 
-  // 🔐 LOGIN
+  
   setSession: (token) => {
+    if (!token) return;
+
+   
     localStorage.setItem("token", token);
+
     set({ authToken: token });
   },
 
-  // 🔥 LOGOUT (BACKEND CONNECTED)
+  
   clearSession: async () => {
     try {
+     
       await AxiosInstance.post("/user/logout");
     } catch (err) {
       console.log("Logout API failed");
     }
 
-    // ❌ remove frontend token
+    
     localStorage.removeItem("token");
 
+    
+    document.cookie = "token=; path=/; max-age=0";
+    document.cookie = "refreshToken=; path=/; max-age=0";
+    document.cookie = "userid=; path=/; max-age=0";
+
+    
     set({ authToken: null });
 
     toast.success("Logged out successfully");
 
-    window.location.href = "/auth/login";
+    if (typeof window !== "undefined") {
+      window.location.href = "/auth/login";
+    }
   },
 
-  // 🔄 LOAD TOKEN (refresh e)
+  
   loadToken: () => {
-    const token = localStorage.getItem("token");
-    set({ authToken: token });
+    try {
+      const token = localStorage.getItem("token");
+
+      if (token) {
+        set({ authToken: token });
+      } else {
+        set({ authToken: null });
+      }
+    } catch (err) {
+      console.log("Token load error:", err);
+      set({ authToken: null });
+    }
   },
 }));
 

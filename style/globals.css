@@ -16,11 +16,8 @@
    background: #f9fbfd;
    color: #1f2937;
    overflow-x: hidden;
-   
-   
  }
-
- /* ================= NAVBAR ================= */
+ /*  NAVBAR */
  .navbar {
    display: flex;
    justify-content: space-between;
@@ -90,7 +87,7 @@
  }
 
 
- /* ================= BUTTON ================= */
+ /* BUTTON */
  .hero-btn {
    margin-top: 10px;
    margin-left: 80px;
@@ -113,7 +110,7 @@
    display: flex;
    align-items: center;
    gap: 12px;
-   /* 🔥 perfect gap */
+  
  }
 
  .nav-btn-outline {
@@ -147,7 +144,7 @@
    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
  }
 
- /* ================= HERO ================= */
+ /*  HERO  */
  .hero {
    display: flex;
    justify-content: space-between;
@@ -157,13 +154,13 @@
 
  }
 
- /* LEFT SIDE */
+ 
  .hero-text {
    flex: 1;
    display: flex;
    flex-direction: column;
    gap: 25px;
-   /* 🔥 spacing */
+   
  }
 
  .hero-text h1 {
@@ -222,7 +219,7 @@
    }
  }
 
- /* ================= SERVICES ================= */
+ /* SERVICES  */
  .services {
    padding: 100px 60px;
    background: linear-gradient(180deg, #ffffff, #f4f9fc);
@@ -253,7 +250,7 @@
    cursor: pointer;
  }
 
- /* HOVER EFFECT 🔥 */
+ /* HOVER EFFECT  */
  .service-card:hover {
    background: linear-gradient(135deg, #f0f9ff, #fdf2f8);
    transform: translateY(-12px) scale(1.03);
@@ -279,7 +276,7 @@
    color: #64748b;
  }
 
- /* ================= WHY ================= */
+ /*  WHY  */
  .why {
    padding: 100px 60px;
    background: linear-gradient(180deg, #ffffff, #f4f9fc);
@@ -331,7 +328,7 @@
    line-height: 1.6;
  }
 
- /* HOVER EFFECT 🔥 */
+ /* HOVER EFFECT  */
  .why-card:hover {
    transform: translateY(-10px) scale(1.03);
    box-shadow: 0 20px 45px rgba(99, 102, 241, 0.25);
@@ -349,17 +346,16 @@
    }
  }
 
- /* =====================================================
-   🔥 DOCTOR SECTION (HOME - AUTO SCROLL)
-===================================================== */
- /* ================= DOCTOR SECTION ================= */
+ 
+
+ /*  DOCTOR SECTION  */
  .doctor-section {
    padding: 80px 8%;
    overflow: hidden;
    background: linear-gradient(180deg, #ffffff, #f4f9fc);
  }
 
- /* ================= HEADER ================= */
+ /* HEADER  */
  .header {
    text-align: center;
    margin-bottom: 50px;
@@ -372,7 +368,7 @@
    letter-spacing: 0.5px;
  }
 
- /* ================= CAROUSEL ================= */
+ /*  CAROUSEL  */
  .carousel {
    width: 100%;
    overflow: hidden;
@@ -383,7 +379,7 @@
    display: flex;
    gap: 30px;
 
-   /* 🔥 VERY IMPORTANT */
+   
    width: fit-content;
 
    animation: scrollLoop 20s linear infinite;
@@ -420,7 +416,7 @@
    }
  }
 
- /* ================= CARD ================= */
+ /*  CARD  */
  .doctor-card {
    min-width: 300px;
    flex-shrink: 0;
@@ -438,14 +434,14 @@
    box-shadow: 0 25px 50px rgba(0, 0, 0, 0.15);
  }
 
- /* ================= IMAGE ================= */
+ 
  .doctor-card img {
    width: 100%;
    height: 200px;
    object-fit: cover;
  }
 
- /* ================= INFO ================= */
+ 
  .doctor-info {
    padding: 20px;
    text-align: center;
@@ -465,7 +461,7 @@
    color: #64748b;
  }
 
- /* ================= SMALL BOOK BUTTON ================= */
+ 
  .book-btn.small {
    padding: 6px 18px;
    font-size: 13px;
@@ -483,14 +479,14 @@
    box-shadow: 0 8px 20px rgba(99, 102, 241, 0.4);
  }
 
- /* ================= VIEW BUTTON ================= */
+ 
  .view-wrapper {
    margin-top: 50px;
    display: flex;
    justify-content: center;
  }
 
- /* 🔥 BIG CTA BUTTON */
+ /*   CTA BUTTON */
  .view-btn {
    padding: 14px 34px;
    border-radius: 999px;
@@ -508,7 +504,7 @@
    box-shadow: 0 12px 25px rgba(0, 0, 0, 0.2);
  }
 
- /* ================= RESPONSIVE ================= */
+ 
  @media (max-width: 768px) {
    .doctor-card {
      min-width: 240px;
@@ -519,9 +515,9 @@
    }
  }
 
- /* =====================================================
-   🔥 DOCTOR PAGE (FULL LIST PAGE)
-===================================================== */
+ /* 
+    DOCTOR PAGE (FULL LIST PAGE)
+ */
  .doctor-page {
    padding: 80px 8%;
    background: linear-gradient(135deg, #f9fafb, #eef2ff);
@@ -547,14 +543,14 @@
    border: 1px solid #ddd;
  }
 
- /* GRID (important: separate from scroll) */
+ 
  .doctor-grid {
    display: grid;
    grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
    gap: 25px;
  }
 
- /* ================= CTA SECTION ================= */
+ /*  CTA SECTION  */
  .cta {
    padding: 120px 20px;
    display: flex;
@@ -568,7 +564,7 @@
    padding-bottom: 40px;
  }
 
- /* 🔥 glass overlay effect */
+ 
  .cta::before {
    content: "";
    position: absolute;
@@ -591,7 +587,7 @@
    right: -100px;
  }
 
- /* ================= CONTENT ================= */
+ /* CONTENT  */
  .cta-content {
    text-align: center;
    color: white;
@@ -606,7 +602,7 @@
    margin-bottom: 20px;
  }
 
- /* gradient highlight */
+ 
  .cta-content span {
    background: linear-gradient(90deg, #38bdf8, #f472b6);
    -webkit-background-clip: text;
@@ -621,7 +617,7 @@
    line-height: 1.6;
  }
 
- /* ================= BUTTON ================= */
+ /* BUTTON  */
  .cta-btn {
    padding: 14px 32px;
    border-radius: 999px;
@@ -638,13 +634,13 @@
    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.25);
  }
 
- /* hover effect */
+ 
  .cta-btn:hover {
    transform: translateY(-3px) scale(1.05);
    box-shadow: 0 15px 40px rgba(0, 0, 0, 0.35);
  }
 
- /* ================= RESPONSIVE ================= */
+ /*  RESPONSIVE  */
  @media (max-width: 768px) {
    .cta-content h2 {
      font-size: 30px;
@@ -655,7 +651,7 @@
    }
  }
 
- /* ================= FOOTER ================= */
+ /* FOOTER  */
  .footer {
    background: linear-gradient(135deg, #0f172a, #1e3a8a);
    color: #e5e7eb;
@@ -671,7 +667,7 @@
    padding: 0 80px 40px;
  }
 
- /* COLUMN */
+ 
  .footer-col h3 {
    margin-bottom: 15px;
    font-size: 18px;
@@ -743,7 +739,7 @@
    -webkit-text-fill-color: transparent;
  }
 
- /* 🔥 BIG + ICON */
+ 
  .footer-logo span {
    font-size: 34px;
    /* 👈 bigger than text */
@@ -757,7 +753,7 @@
    top: 2px;
  }
 
- /* ================= RESPONSIVE ================= */
+ /*  RESPONSIVE  */
  @media (max-width: 900px) {
    .footer-container {
      grid-template-columns: 1fr 1fr;
@@ -776,9 +772,9 @@
    }
  }
 
- /* =====================================================
+ /* 
    MODAL
-===================================================== */
+*/
  .modal-overlay {
    position: fixed;
    inset: 0;
@@ -794,9 +790,9 @@
    border-radius: 15px;
  }
 
- /* =====================================================
+ /* 
    RESPONSIVE
-===================================================== */
+ */
  @media (max-width: 768px) {
 
    .hero {
@@ -813,120 +809,4 @@
    }
  }
 
- /* ===============================
-   BOOKING MODAL (FULL FIX)
-================================= */
-
- .modal-overlay {
-   position: fixed;
-   top: 0;
-   left: 0;
-   width: 100%;
-   height: 100%;
-   background: rgba(0, 0, 0, 0.6);
-   display: flex;
-   justify-content: center;
-   align-items: center;
-   z-index: 2000;
- }
-
- .modal-box {
-   background: #ffffff;
-   padding: 30px;
-   border-radius: 20px;
-   width: 420px;
-   max-width: 90%;
-   text-align: center;
-   animation: modalFade 0.3s ease;
- }
-
- /* animation */
- @keyframes modalFade {
-   from {
-     opacity: 0;
-     transform: scale(0.85);
-   }
-
-   to {
-     opacity: 1;
-     transform: scale(1);
-   }
- }
-
- /* doctor name */
- .doc-name {
-   margin: 10px 0 20px;
-   font-weight: 600;
-   color: #6366f1;
- }
-
- /* date input */
- .date-input {
-   width: 100%;
-   padding: 10px;
-   margin-bottom: 15px;
-   border-radius: 8px;
-   border: 1px solid #ddd;
- }
-
- /* slots container */
- .all-slots {
-   max-height: 250px;
-   overflow-y: auto;
-   margin-top: 10px;
- }
-
- /* day block */
- .day-block {
-   margin-bottom: 15px;
- }
-
- /* date title */
- .date-title {
-   font-size: 13px;
-   font-weight: 600;
-   color: #6366f1;
-   margin-bottom: 6px;
- }
-
- /* slots */
- .slot-grid {
-   display: flex;
-   flex-wrap: wrap;
-   gap: 8px;
- }
-
- /* slot button */
- .slot-btn {
-   padding: 8px 12px;
-   border-radius: 8px;
-   border: 1px solid #ddd;
-   background: #f9fafb;
-   cursor: pointer;
-   transition: 0.3s;
- }
-
- .slot-btn:hover {
-   background: #6366f1;
-   color: white;
- }
-
- .slot-btn.active {
-   background: linear-gradient(135deg, #6366f1, #ec4899);
-   color: white;
- }
-
- /* actions */
- .modal-actions {
-   display: flex;
-   justify-content: space-between;
-   margin-top: 15px;
- }
-
- .cancel-btn {
-   padding: 10px 20px;
-   border-radius: 8px;
-   border: none;
-   background: #e5e7eb;
-   cursor: pointer;
- }
+ 

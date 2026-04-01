@@ -1,11 +1,10 @@
-import AboutHero from "@/src/shared/sections/AboutHero";
-import AboutIntro from "@/src/shared/sections/AboutIntro";
 
+import HomeAboutPage from "@/src/shared/sections/about/aboutPage";
 export default function AboutPage() {
   return (
     <>
-      <AboutHero />
-      <AboutIntro/>
+      <HomeAboutPage />
+      
      
 
     </>

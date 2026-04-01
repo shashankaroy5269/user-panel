@@ -1,7 +1,7 @@
 
 
-import SignupForm from "@/src/modules/auth/ui/signupForm";
+import RegisterForm from "@/src/components/authUi/signupForm";
 
 export default function SignupPage() {
-  return <SignupForm />;
+  return <RegisterForm />;
 }

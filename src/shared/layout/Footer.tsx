@@ -3,7 +3,7 @@ export default function Footer() {
     <footer className="footer">
       <div className="footer-container">
 
-        {/* LEFT */}
+        
         <div className="footer-col">
           <h2 className="footer-logo">Doctor<span>+</span></h2>
           <p>
@@ -12,7 +12,7 @@ export default function Footer() {
           </p>
         </div>
 
-        {/* LINKS */}
+       
         <div className="footer-col">
           <h3>Quick Links</h3>
           <a href="/">Home</a>
@@ -21,7 +21,7 @@ export default function Footer() {
           <a href="/contact">Contact</a>
         </div>
 
-        {/* CONTACT */}
+        
         <div className="footer-col">
           <h3>Contact Us</h3>
           <p>📧 support@doctroplus.com</p>
@@ -29,7 +29,7 @@ export default function Footer() {
           <p>📍 Durgapur, India</p>
         </div>
 
-        {/* SOCIAL */}
+       
         <div className="footer-col">
           <h3>Follow Us</h3>
           <div className="socials">

@@ -20,7 +20,7 @@ export default function Doctors() {
         <h2>Our Doctors</h2>
       </div>
 
-      {/* 🔥 CAROUSEL */}
+     
       <div className="carousel">
         <div className="carousel-track">
           {[...doctorsData, ...doctorsData].map((doc, i) => (
@@ -31,9 +31,9 @@ export default function Doctors() {
                 <h3>{doc.name}</h3>
                 <p>{doc.department.name}</p>
 
-                {/* 🔥 SMALL CENTER BUTTON */}
+                
                 <button
-                  onClick={() => router.push("/findDoctor")}
+                  onClick={() => router.push("/booking")}
                   className="book-btn small"
                 >
                   Book
@@ -43,10 +43,10 @@ export default function Doctors() {
           ))}
         </div>
 
-        {/* 🔥 CENTER BIG BUTTON */}
+       
         <div className="view-wrapper">
           <button
-            onClick={() => router.push("/findDoctor")}
+            onClick={() => router.push("/booking")}
             className="view-btn"
           >
             View All Doctors

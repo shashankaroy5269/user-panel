@@ -1,12 +1,17 @@
 "use client";
 
 import Link from "next/link";
-import { useState } from "react";
+import { useState, useEffect } from "react";
 import useAppStore from "@/src/store/useAppStore";
-
+import styles from "./Navbar.module.css"
 export default function Navbar() {
-  const { authToken, clearSession } = useAppStore();
+  const { authToken, clearSession, loadToken } = useAppStore();
   const [open, setOpen] = useState(false);
+
+  
+  useEffect(() => {
+    loadToken();
+  }, []);
 
   return (
     <nav className="navbar">
@@ -15,11 +20,10 @@ export default function Navbar() {
       <div className="nav-links">
         <Link href="/">Home</Link>
         <Link href="/about">About</Link>
-        <Link href="/findDoctor">Doctors</Link>
+        <Link href="/booking">Doctors</Link>
         <Link href="/contact">Contact</Link>
       </div>
 
-      {/* RIGHT SIDE */}
       {!authToken ? (
         <div className="nav-auth">
           <Link href="/auth/login" className="nav-btn-outline">
@@ -30,15 +34,15 @@ export default function Navbar() {
           </Link>
         </div>
       ) : (
-        <div className="nav-profile">
+        <div className={styles.navProfile}>
           <img
-            src="/img/user.png"
-            className="nav-avatar"
+            src="/img/doctor3.jpg"
+            className={styles.navAvatar}
             onClick={() => setOpen(!open)}
           />
 
           {open && (
-            <div className="nav-dropdown">
+            <div className={styles.navDropdown}>
               <p>User</p>
 
               <Link href="/profile">Profile</Link>

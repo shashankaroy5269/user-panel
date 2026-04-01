@@ -1,0 +1,85 @@
+.navProfile {
+  position: relative;
+  cursor: pointer;
+}
+
+/* Avatar */
+.navAvatar {
+  width: 38px;
+  height: 38px;
+  border-radius: 50%;
+  border: 2px solid #6366f1;
+  object-fit: cover;
+  transition: 0.3s;
+}
+
+.navAvatar:hover {
+  transform: scale(1.05);
+}
+
+/* Dropdown */
+.navDropdown {
+  position: absolute;
+  right: 0;
+  top: 50px;
+  width: 180px;
+  background: #ffffff;
+  border-radius: 10px;
+  padding: 10px;
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.08);
+  animation: fadeIn 0.2s ease-in-out;
+  z-index: 999;
+}
+
+/* Username */
+.navDropdown p {
+  font-size: 14px;
+  font-weight: 600;
+  color: #0f172a;
+  margin-bottom: 8px;
+}
+
+/* Links */
+.navDropdown a {
+  display: block;
+  padding: 8px;
+  font-size: 14px;
+  text-decoration: none;
+  color: #475569;
+  border-radius: 6px;
+  transition: 0.2s;
+}
+
+.navDropdown a:hover {
+  background: #f1f5f9;
+  color: #6366f1;
+}
+
+/* Logout button */
+.navDropdown button {
+  width: 100%;
+  margin-top: 6px;
+  padding: 8px;
+  border: none;
+  background: #ef4444;
+  color: white;
+  border-radius: 6px;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+.navDropdown button:hover {
+  background: #dc2626;
+}
+
+/* Animation */
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: translateY(-6px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
